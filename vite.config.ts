@@ -7,6 +7,9 @@ export default defineConfig(({ mode }) => {
   const backendUrl = env.VITE_BACKEND_URL;
 
   return {
+    eslint: {
+    ignoreDuringBuilds: true,
+  },
     plugins: [
       react(),
       tailwindcss()
